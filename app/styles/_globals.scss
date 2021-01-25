@@ -51,9 +51,11 @@ button,
   font-family: 'Public Sans', sans-serif;
   color: $white;
   background: linear-gradient(to right, $limeGreen 0%, $brightCyan 100%);
+  transition: opacity 300ms ease-in-out;
 
   &:hover {
     cursor: pointer;
+    opacity: 0.75;
   }
 }
 
