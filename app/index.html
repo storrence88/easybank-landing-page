@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -12,23 +10,35 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/app/styles/styles.css" />
-
     <title>Frontend Mentor | Easybank landing page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: #3e52a3;
-      }
-    </style>
   </head>
   <body>
+    <header class="header">
+      <nav class="flex flex-jc-sb flex-ai-c">
+        <a href="/" class="header__logo">
+          <img src="/app/images/logo.svg" alt="Easybank Logo" />
+        </a>
+
+        <a href="#" class="header__menu hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <div class="header__links hide-for-mobile">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </div>
+
+        <button type="button" class="hide-for-mobile">Request Invite</button>
+      </nav>
+    </header>
+
     <!--  
-    Home About Contact Blog Careers Request Invite Next generation digital banking Take your
+    Request Invite Next generation digital banking Take your
     financial life online. Your Easybank account will be a one-stop-shop for spending, saving,
     budgeting, investing, and much more. Request Invite Why choose Easybank? We leverage Open
     Banking to turn your bank account into your financial hub. Control your finances like never
@@ -49,11 +59,6 @@
     Support Privacy Policy Request Invite © Easybank. All Rights Reserved
     -->
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Steve</a>.
-    </div>
     <script src="/app/javascript/index.js"></script>
   </body>
 </html>
