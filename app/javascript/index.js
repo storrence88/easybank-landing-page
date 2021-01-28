@@ -1,10 +1,17 @@
 console.log('Hello, world!');
 
-const btn = document.querySelector('#btnHamburger');
-btn.addEventListener('click', () => {
-  if (btn.classList.contains('open')) {
-    btn.classList.remove('open');
+const header = document.querySelector('.header');
+const overlay = document.querySelector('.overlay');
+header.addEventListener('click', () => {
+  if (header.classList.contains('open')) {
+    // Close mobile menu
+    header.classList.remove('open');
+    overlay.classList.remove('fade-in');
+    overlay.classList.add('fade-out');
   } else {
-    btn.classList.add('open');
+    // Open mobile menu
+    header.classList.add('open');
+    overlay.classList.remove('fade-out');
+    overlay.classList.add('fade-in');
   }
 });
